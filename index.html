@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendy Sánchez Valdivia</title>
+    <!-- Enlace a la fuente Dancing Script de Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; 
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: #FFB6C1;/* Caja de contenido */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        header {
+            position: relative;
+            background-color: #ffb6c1; /* Rosa pálido para el menú */
+            padding: 10px 0;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            text-align: center;
+            color: #333;
+            font-family: 'Dancing Script', cursive; /* Fuente cursiva */
+            font-weight: 700;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            background-color: #ff69b4; /* Rosa fuerte */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff1493; /* Rosa oscuro */
+            color: #fff;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .link-item {
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .link-item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .link-item p {
+            margin-top: 5px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .link-item a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .link-item a:hover {
+            background-color: #333;
+            color: #FFB6C1; /* Texto rosa pálido */
+        }
+
+        .link-item a:hover p {
+            color: #FFB6C1;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .project-item {
+            width: 30%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item img {
+            width: 100%;
+            display: block;
+        }
+
+        .project-description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .project-item:hover .project-description {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#proyecto1">Proyecto 1</a>
+                <a href="#proyecto2">Proyecto 2</a>
+                <a href="#proyecto3">Proyecto 3</a>
+                <a href="#sobre-mi">Sobre mí</a>
+            </nav>
+            <h1 class="nombre"  >
+                <span>Wendy</span> <span>Sánchez</span> <span>Valdivia</span>
+            </h1>
+    
+        </header>
+
+        <section id="sobre-mi" class="profile">
+            <p>&#128187; &#128507; &#128508; &#128509; &#128512;</p>
+            <p>Soy una estudiante de Ingeniería en Ciencias de la Computación en la Benemérita Universidad Autónoma del Estado de Puebla. Me apasiona la tecnología y me gustaría conocer el mundo.</p>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <div id="proyecto1" class="project-item">
+                <a href="https://proyecto1.com" target="_blank">
+                    <img src="img/cargando.jpg" alt="Proyecto 1">
+                    <div class="project-description">
+                         Proyecto 1: Aqui se escribira una breve descripción del proyecto.
+                    </div>
+                </a>
+            </div>
+            <div id="proyecto2" class="project-item">
+                <a href="https://proyecto2.com" target="_blank">
+                    <img src="img/cargando.jpg" alt="Proyecto 2">
+                    <div class="project-description">
+                        Proyecto 2: Aqui se escribira una breve descripción del proyecto.
+                    </div>
+                </a>
+            </div>
+            <div id="proyecto3" class="project-item">
+                <a href="https://proyecto3.com" target="_blank">
+                    <img src="img/cargando.jpg" alt="Proyecto 3">
+                    <div class="project-description">
+                        Proyecto 3: Aqui se escribira una breve descripción del proyecto.
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Wendy Sánchez Valdivia</p>
+        </footer>
+    </div>
+</body>
+</html>
